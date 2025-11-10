@@ -1,0 +1,48 @@
+//H-Bride pins 1 and 2 are always front motors and 3 and 4 are always rear motors
+//No speed control currently available
+
+//Declare control pins
+//RIGHT FRONT
+int IN1R = 4;
+int IN2R = 5;
+
+//RIGHT REAR
+int IN3R = 7;
+int IN4R = 8;
+
+//LEFT FRONT
+int 
+
+//LEFT REAR
+
+void setup() {
+  pinMode(IN1R, OUTPUT);
+  pinMode(IN2R, OUTPUT);
+  pinMode(IN3R, OUTPUT);
+  pinMode(IN4R, OUTPUT);
+
+
+  digitalWrite(IN1R, LOW);
+  digitalWrite(IN2R, LOW);
+  
+
+}
+
+void TurnRight(){
+  digitalWrite(IN1R, HIGH);
+  digitalWrite(IN2R, LOW);
+  digitalWrite(IN3R, HIGH);
+  digitalWrite(IN4R, LOW);
+}
+
+void allSTOP(){
+  digitalWrite(IN1R, LOW);
+  digitalWrite(IN2R, LOW);
+  digitalWrite(IN3R, LOW);
+  digitalWrite(IN4R, LOW);
+}
+
+void loop() {
+  TurnRight();
+
+}
